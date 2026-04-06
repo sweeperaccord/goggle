@@ -1,0 +1,121 @@
+! name: Tech & Left-Leaning Lens
+! description: Boosts tech blogs, docs, and engineering communities; boosts progressive/labor news outlets and downranks right-wing and tabloid sources.
+! public: false
+! author: anonymous
+! avatar: #c0392b
+
+! ==========================================
+! TECH BOOSTS
+! ==========================================
+
+! Official docs
+$boost=4,site=*.readthedocs.io
+$boost=4,site=docs.*
+$boost=4,site=developer.mozilla.org
+$boost=3,site=*.github.io
+$boost=3,site=devdocs.io
+
+! Engineering communities & Q&A
+$boost=4,site=stackoverflow.com
+$boost=3,site=stackexchange.com
+$boost=4,site=news.ycombinator.com
+$boost=3,site=lobste.rs
+$boost=3,site=lwn.net
+
+! Indie tech blogs & publishing platforms
+$boost=3,site=dev.to
+$boost=3,site=hashnode.dev
+$boost=2,site=*.substack.com
+$boost=2,site=*.bearblog.dev
+$boost=2,site=*.micro.blog
+$boost=3,site=css-tricks.com
+$boost=3,site=smashingmagazine.com
+$boost=3,site=arstechnica.com
+$boost=3,site=theregister.com
+$boost=3,site=404media.co
+$boost=3,site=techdirt.com
+$boost=2,site=wired.com
+$boost=2,site=theverge.com
+
+! Tech downranks (SEO content farms)
+$downrank=5,site=w3schools.com
+$downrank=5,site=geeksforgeeks.org
+$downrank=5,site=tutorialspoint.com
+$downrank=5,site=javatpoint.com
+$downrank=4,site=medium.com
+$downrank=4,site=quora.com
+
+! ==========================================
+! LEFT-LEANING NEWS BOOSTS
+! ==========================================
+
+! Progressive / left-of-center outlets
+$boost=4,site=theguardian.com
+$boost=4,site=theintercept.com
+$boost=4,site=jacobin.com
+$boost=3,site=motherjones.com
+$boost=3,site=thenation.com
+$boost=3,site=democracynow.org
+$boost=3,site=truthout.org
+$boost=3,site=commondreams.org
+$boost=3,site=propublica.org
+$boost=3,site=currentaffairs.org
+$boost=3,site=newrepublic.com
+$boost=3,site=prospect.org
+$boost=3,site=inthesetimes.com
+$boost=3,site=bostonreview.net
+$boost=2,site=vox.com
+$boost=2,site=huffpost.com
+$boost=2,site=slate.com
+$boost=2,site=npr.org
+$boost=2,site=pbs.org
+$boost=2,site=bbc.com
+$boost=2,site=reuters.com
+$boost=2,site=apnews.com
+
+! Labor / worker-focused
+$boost=3,site=labornotes.org
+$boost=3,site=payday.report
+$boost=3,site=workdayminnesota.org
+
+! Tech-labor & tech-criticism crossover
+$boost=4,site=pluralistic.net
+$boost=3,site=citationneeded.news
+$boost=3,site=disconnect.blog
+$boost=3,site=techworkerscoalition.org
+
+! ==========================================
+! RIGHT-LEANING / TABLOID DOWNRANKS
+! ==========================================
+
+$downrank=8,site=breitbart.com
+$downrank=8,site=dailycaller.com
+$downrank=8,site=thegatewaypundit.com
+$downrank=8,site=infowars.com
+$downrank=8,site=oann.com
+$downrank=8,site=newsmax.com
+$downrank=8,site=theepochtimes.com
+$downrank=7,site=foxnews.com
+$downrank=7,site=nypost.com
+$downrank=7,site=dailywire.com
+$downrank=7,site=washingtontimes.com
+$downrank=7,site=washingtonexaminer.com
+$downrank=7,site=zerohedge.com
+$downrank=7,site=thefederalist.com
+$downrank=6,site=nationalreview.com
+$downrank=6,site=spectator.org
+$downrank=6,site=reason.com
+
+! Tabloids & low-quality
+$downrank=8,site=dailymail.co.uk
+$downrank=7,site=thesun.co.uk
+$downrank=7,site=express.co.uk
+$downrank=7,site=mirror.co.uk
+
+! ==========================================
+! DISCARDS
+! ==========================================
+
+$discard,site=*.pinterest.*
+$discard,site=coursehero.com
+$discard,site=chegg.com
