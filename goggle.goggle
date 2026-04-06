@@ -19,7 +19,7 @@ $boost=4,site=kubernetes.io
 $boost=3,site=devdocs.io
 
 ! Boost any URL containing /docs/ (URL pattern, not site=)
-$boost=3,/docs/
+/docs/$boost=3
 
 ! Engineering communities & Q&A
 $boost=4,site=stackoverflow.com
